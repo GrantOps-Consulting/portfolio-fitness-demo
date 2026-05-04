@@ -2,50 +2,68 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <title>BOXWORKS Athletic Co. — Boxing, Strength &amp; Conditioning · East Glasgow</title>
+  <title>BOXWORKS Athletic Co. — Boxing &amp; Strength · Bridgeton, Glasgow</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://grantopsconsulting.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio demo — independent boxing &amp; strength gym in Bridgeton, Glasgow. Classes, open-floor strength, coaching.">
+  <meta name="description" content="Portfolio demo concept — independent boxing &amp; strength gym in Bridgeton, Glasgow. Classes, coaching, no long-term tie-in.">
   <meta name="theme-color" content="#0A0A0A">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0A'/%3E%3Cpolygon points='16,3 28,10 28,22 16,29 4,22 4,10' stroke='%23C5FF00' stroke-width='1.6' fill='none'/%3E%3Ctext x='16' y='21' font-family='Arial Black, sans-serif' font-size='12' fill='%23C5FF00' text-anchor='middle' font-weight='900'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0A'/%3E%3Crect x='4' y='4' width='24' height='24' fill='%23C5FF00'/%3E%3Ctext x='16' y='22' font-family='Arial Black, sans-serif' font-size='14' fill='%230A0A0A' text-anchor='middle' font-weight='900' letter-spacing='-0.05em'%3EBX%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:opsz,wght@9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
 :root {
-  --bg:          #0A0A0A;
-  --bg-2:        #131313;
-  --bg-3:        #1C1C1C;
-  --bg-4:        #2A2A2A;
-  --paper:       #F2F2EF;
-  --paper-2:     #E5E5E0;
-  --paper-3:     #C9C9C2;
-  --ink:         #0A0A0A;
-  --ink-2:       #1F1F1F;
-  --ink-3:       #4A4A4A;
-  --ink-4:       #757575;
-  --volt:        #C5FF00;
-  --volt-bright: #DDFF4D;
-  --volt-deep:   #94C200;
-  --volt-faint:  rgba(197, 255, 0, 0.16);
-  --on-dark:     #F2F2EF;
-  --on-dark-2:   #B0B0AB;
-  --on-dark-3:   #6B6B66;
-  --line-d:      1px solid #2A2A2A;
-  --line-l:      1px solid #C9C9C2;
+  /* Fight-floor palette — pure black with one volt accent.
+     Distinctly different from Drygate's industrial-cream + amber and
+     Trongate's vintage cordovan + brass. */
+  --bg:           #0A0A0A;
+  --bg-2:         #131313;
+  --bg-3:         #1C1C1C;
+  --bg-4:         #2A2A2A;
+  --bg-5:         #404040;
 
-  --display: 'Archivo Black', 'Helvetica Neue', system-ui, sans-serif;
+  --paper:        #F2F2EF;
+  --paper-2:      #D6D6D2;
+
+  --ink:          #0A0A0A;
+  --ink-2:        #1F1F1F;
+
+  /* Volt — the energy accent. Used sparingly. */
+  --volt:         #C5FF00;
+  --volt-bright:  #DDFF4D;
+  --volt-deep:    #94C200;
+  --volt-faint:   rgba(197, 255, 0, 0.16);
+
+  /* Heat — secondary accent for sparring / advanced / tags */
+  --heat:         #FF6B35;
+  --heat-deep:    #C2421A;
+
+  /* Soft greys for text on dark */
+  --on-dark:      #F2F2EF;
+  --on-dark-2:    #B0B0AB;
+  --on-dark-3:    #6B6B66;
+  --on-dark-4:    #3F3F3D;
+
+  /* Type system — Bricolage Grotesque (variable, 200–800) replaces Archivo Black,
+     gives more typographic range; DM Sans body different from Trongate's Manrope. */
+  --display: 'Bricolage Grotesque', 'Helvetica Neue', system-ui, sans-serif;
   --body:    'DM Sans', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
   --mono:    'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
 
   --gutter: clamp(20px, 4vw, 60px);
+  --max:    1340px;
   --ease:   cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth; }
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--body);
@@ -54,432 +72,575 @@ body {
   color: var(--on-dark);
   background: var(--bg);
   overflow-x: hidden;
-  position: relative;
 }
-
-@media (hover: hover) and (pointer: fine) { body { cursor: none; } }
 
 img, svg { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
-
-/* ──────────── CUSTOM CURSOR — square crosshair ──────────── */
-.cursor-square, .cursor-dot {
-  position: fixed; top: 0; left: 0;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-  will-change: transform, width, height;
-  transition: width 0.3s var(--ease), height 0.3s var(--ease), background 0.3s, border-color 0.3s, opacity 0.2s;
-}
-.cursor-square {
-  width: 28px; height: 28px;
-  border: 1.5px solid var(--volt);
-  mix-blend-mode: difference;
-}
-.cursor-dot {
-  width: 4px; height: 4px;
-  background: var(--volt);
-}
-body.is-cursor-hover .cursor-square {
-  width: 56px; height: 56px;
-  background: var(--volt);
-  border-color: var(--volt);
-  mix-blend-mode: normal;
-}
-body.is-cursor-hover .cursor-dot { opacity: 0; }
-@media (hover: none), (pointer: coarse) { .cursor-square, .cursor-dot { display: none; } }
+::selection { background: var(--volt); color: var(--ink); }
 
 /* ──────────── TYPE ──────────── */
-.display, h1, h2 {
+.display, h1, h2, h3 {
   font-family: var(--display);
-  font-weight: 900;
-  line-height: 0.94;
+  font-weight: 800;
+  font-stretch: 80%;            /* condensed, axis-driven */
+  line-height: 0.92;
   letter-spacing: -0.025em;
   text-transform: uppercase;
 }
-h1 { font-size: clamp(72px, 14vw, 220px); }
-h2 { font-size: clamp(40px, 6.4vw, 96px); }
+h1 { font-size: clamp(72px, 13vw, 220px); }
+h2 { font-size: clamp(48px, 7vw, 116px); }
+h3 { font-size: clamp(22px, 2.6vw, 32px); }
 
-.mono {
+.label {
   font-family: var(--mono);
   font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
 }
-.mono-lg { font-family: var(--mono); font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; }
 
 .lede {
   font-family: var(--body);
-  font-size: clamp(17px, 1.5vw, 21px);
-  line-height: 1.55;
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.6;
   font-weight: 400;
   color: var(--on-dark-2);
   max-width: 56ch;
 }
 
+.shell {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ──────────── STATUS BAR ──────────── */
+.status-bar {
+  background: var(--bg-2);
+  color: var(--on-dark-2);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 8px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--bg-4);
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 51;
+}
+.status-bar .left { display: inline-flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.status-bar .live {
+  width: 7px; height: 7px;
+  background: var(--volt);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(197, 255, 0, 0.7);
+  animation: status-pulse 1.6s var(--ease) infinite;
+}
+@keyframes status-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(197, 255, 0, 0.7); }
+  50%      { box-shadow: 0 0 0 8px rgba(197, 255, 0, 0); }
+}
+.status-bar .training { color: var(--volt-bright); }
+.status-bar .right { color: var(--on-dark-3); }
+.status-bar .sep { color: var(--on-dark-4); }
+@media (max-width: 720px) {
+  .status-bar { font-size: 9px; letter-spacing: 0.12em; padding: 7px 14px; gap: 8px; }
+  .status-bar .right { display: none; }
+  .status-bar .left .sep,
+  .status-bar .left > span:nth-child(n+4) { display: none; }
+}
+
 /* ──────────── TOPBAR ──────────── */
 .topbar {
-  position: fixed; top: 0; left: 0; right: 0;
+  position: fixed;
+  top: 32px; left: 0; right: 0;
   z-index: 50;
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 18px var(--gutter);
-  background: rgba(10, 10, 10, 0.86);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: clamp(20px, 4vw, 56px);
+  align-items: center;
+  padding: 16px var(--gutter);
+  background: rgba(10, 10, 10, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: var(--line-d);
-  transition: background 0.4s ease, padding 0.4s ease;
+  border-bottom: 1px solid var(--bg-4);
+  transition: padding 0.4s ease, background 0.4s ease;
 }
 .topbar.lit {
+  padding: 10px var(--gutter);
   background: rgba(10, 10, 10, 0.98);
-  padding: 12px var(--gutter);
+  border-bottom-color: var(--volt);
 }
 
-.wordmark {
-  display: inline-flex; align-items: center; gap: 14px;
+.brand-mark {
+  display: inline-flex; align-items: center; gap: 12px;
   color: var(--on-dark);
 }
-.wordmark .mark {
+.brand-square {
   width: 38px; height: 38px;
-  flex-shrink: 0;
-  transition: width 0.4s ease, height 0.4s ease;
-}
-.wordmark .text { display: flex; flex-direction: column; line-height: 1; }
-.wordmark .text .name {
-  font-family: var(--display); font-weight: 900;
-  font-size: 22px; letter-spacing: -0.01em;
-  text-transform: uppercase;
-}
-.wordmark .text .sub {
-  font-family: var(--mono); font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase;
-  color: var(--volt); margin-top: 5px;
-}
-.topbar.lit .wordmark .mark { width: 30px; height: 30px; }
-.topbar.lit .wordmark .text .name { font-size: 19px; }
-
-.topbar-cta {
-  font-family: var(--display); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase;
-  color: var(--ink);
   background: var(--volt);
-  padding: 12px 18px;
-  transition: background 0.3s, color 0.3s, transform 0.3s;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: 17px;
+  color: var(--ink);
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  position: relative;
+  transition: width 0.4s ease, height 0.4s ease, font-size 0.4s ease;
+}
+.brand-square::after {
+  /* Subtle inner border ring for premium feel */
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid var(--ink);
+  pointer-events: none;
+}
+.topbar.lit .brand-square { width: 32px; height: 32px; font-size: 14px; }
+
+.brand-text { display: flex; flex-direction: column; line-height: 1; }
+.brand-text .name {
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: 22px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: var(--on-dark);
   white-space: nowrap;
 }
-.topbar-cta:hover {
-  background: var(--volt-bright);
-  transform: translateY(-1px);
+.brand-text .sub {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--volt);
+  margin-top: 5px;
 }
+.topbar.lit .brand-text .name { font-size: 19px; }
+
+.nav-links {
+  display: flex; gap: 30px;
+  justify-content: center;
+}
+.nav-links a {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--on-dark-2);
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 1px;
+  background: var(--volt);
+  transition: width 0.3s var(--ease);
+}
+.nav-links a:hover { color: var(--volt); }
+.nav-links a:hover::after { width: 100%; }
+@media (max-width: 1100px) { .nav-links { display: none; } }
+
+.topbar-cta {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--volt);
+  border: 1px solid var(--volt);
+  padding: 12px 22px;
+  transition: background 0.3s, transform 0.3s;
+  white-space: nowrap;
+}
+.topbar-cta:hover { background: var(--volt-bright); transform: translateY(-1px); }
 
 @media (max-width: 720px) {
-  .wordmark .text .name { font-size: 19px; }
-  .topbar-cta { font-size: 11px; padding: 10px 14px; }
+  .topbar { grid-template-columns: auto auto; gap: 12px; padding: 10px 18px; }
+  .topbar-cta { padding: 9px 12px; font-size: 10px; letter-spacing: 0.18em; }
+  .brand-text .name { font-size: 18px; }
+  .brand-square { width: 32px; height: 32px; font-size: 14px; }
 }
 
 /* ──────────── HERO ──────────── */
 .hero {
   position: relative;
   min-height: 100svh;
-  padding: 130px var(--gutter) 60px;
+  padding: 160px var(--gutter) 80px;
+  display: flex; flex-direction: column; justify-content: center;
   overflow: hidden;
-  display: flex; flex-direction: column; justify-content: space-between;
 }
-/* Diagonal stripe pattern background, very subtle */
-.hero::before {
-  content: '';
+.hero-photo {
   position: absolute; inset: 0;
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      rgba(197, 255, 0, 0.018) 0,
-      rgba(197, 255, 0, 0.018) 1px,
-      transparent 1px,
-      transparent 32px
-    );
-  pointer-events: none;
+  background-image: url("https://images.unsplash.com/photo-1716307046875-4c4ba2f43cab?w=2000&fit=crop&q=80&auto=format");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-2);
+  z-index: 0;
+  /* Slow Ken Burns — subtle scale loop for cinematic feel */
+  animation: hero-kenburns 22s ease-in-out infinite alternate;
 }
-.hero::after {
-  content: '';
+@keyframes hero-kenburns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+.hero-overlay {
   position: absolute; inset: 0;
+  z-index: 1;
   background:
-    radial-gradient(ellipse at 80% 30%, rgba(197, 255, 0, 0.12) 0%, transparent 55%),
-    radial-gradient(ellipse at 0% 100%, rgba(197, 255, 0, 0.05) 0%, transparent 50%);
+    linear-gradient(180deg, rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.35) 28%, rgba(10, 10, 10, 0.55) 60%, rgba(10, 10, 10, 0.92) 100%),
+    radial-gradient(ellipse at 70% 50%, rgba(197, 255, 0, 0.08) 0%, transparent 60%);
   pointer-events: none;
-  transition: transform 0.4s ease;
-  will-change: transform;
+}
+.hero-grain {
+  position: absolute; inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  mix-blend-mode: overlay;
+  opacity: 0.4;
 }
 
-.hero-top {
-  position: relative; z-index: 2;
-  display: flex; justify-content: space-between; align-items: flex-start;
-  color: var(--on-dark-2);
-  margin-bottom: auto;
-  gap: 24px;
+.hero-inner {
+  position: relative;
+  z-index: 3;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex; flex-direction: column;
 }
-.hero-top .row { display: flex; gap: 22px; align-items: center; }
-.hero-top .live-badge {
+
+.hero-badge {
   display: inline-flex; align-items: center; gap: 10px;
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--on-dark);
-  padding: 8px 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--volt);
+  padding: 7px 14px;
   background: rgba(197, 255, 0, 0.08);
   border: 1px solid var(--volt);
+  align-self: flex-start;
+  margin-bottom: 32px;
 }
-.hero-top .live-badge .dot {
-  width: 8px; height: 8px; background: var(--volt); border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(197, 255, 0, 0.6);
-  animation: pulse 1.8s var(--ease) infinite;
-}
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(197, 255, 0, 0.6); }
-  50%      { box-shadow: 0 0 0 8px rgba(197, 255, 0, 0); }
+.hero-badge .dot {
+  width: 7px; height: 7px;
+  background: var(--volt);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(197, 255, 0, 0.7);
+  animation: status-pulse 1.6s var(--ease) infinite;
 }
 
-.hero-headline {
-  position: relative; z-index: 2;
-  margin-top: 6vh;
+.hero-name {
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: clamp(72px, 14vw, 240px);
+  line-height: 0.86;
+  letter-spacing: -0.035em;
+  color: var(--paper);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
-.hero-headline .line { display: block; overflow: hidden; }
-.hero-headline .line span {
-  display: inline-block;
-  transform: translateY(110%);
-  opacity: 0;
-  animation: rise 1.05s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-}
-.hero-headline .line:nth-child(1) span { animation-delay: 0.05s; }
-.hero-headline .line:nth-child(2) span { animation-delay: 0.18s; color: var(--volt); }
-.hero-headline .line:nth-child(3) span { animation-delay: 0.32s; }
-@keyframes rise { to { transform: translateY(0); opacity: 1; } }
-
-/* Big pill stat in hero corner */
-.hero-stat {
-  position: absolute;
-  top: 40%; right: var(--gutter);
-  z-index: 2;
-  display: flex; flex-direction: column;
-  font-family: var(--display); font-weight: 900;
-  text-align: right;
-  opacity: 0;
-  animation: stat-in 1.2s 0.8s var(--ease) forwards;
-}
-@keyframes stat-in { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
-.hero-stat .num {
-  font-size: clamp(80px, 12vw, 180px);
+.hero-name .volt { color: var(--volt); }
+.hero-name .accent {
+  display: block;
+  font-size: 0.36em;
+  font-weight: 500;
+  letter-spacing: 0.42em;
   color: var(--volt);
-  line-height: 0.9;
-  letter-spacing: -0.04em;
+  margin-top: 0.4em;
+  font-stretch: 100%;
 }
-.hero-stat .lab {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--on-dark-2); font-weight: 500;
-  margin-top: 8px;
-}
-@media (max-width: 1024px) { .hero-stat { display: none; } }
 
-.hero-strap {
-  position: relative; z-index: 2;
-  display: flex; flex-wrap: wrap;
-  justify-content: space-between; align-items: flex-end;
-  gap: 32px;
-  margin-top: 6vh;
-  padding-top: 28px;
-  border-top: var(--line-d);
-}
-.hero-strap-l { max-width: 540px; }
-.hero-strap-l .lede { color: var(--on-dark-2); font-size: clamp(16px, 1.4vw, 19px); }
-.hero-strap-l .ticker {
-  margin-top: 22px;
-  display: flex; flex-wrap: wrap; gap: 14px 28px;
-}
-.hero-strap-l .ticker span {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+.hero-tagline {
+  font-family: var(--body);
+  font-weight: 400;
+  font-size: clamp(16px, 1.7vw, 22px);
+  line-height: 1.55;
   color: var(--on-dark-2);
-  display: inline-flex; align-items: baseline; gap: 8px;
+  margin: 28px 0 36px;
+  max-width: 48ch;
 }
-.hero-strap-l .ticker span::before {
-  content: '◢'; color: var(--volt); font-size: 9px; line-height: 1;
+
+.hero-meta {
+  display: flex; flex-wrap: wrap;
+  gap: 12px 30px;
+  margin-bottom: 40px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--on-dark-2);
 }
+.hero-meta .v { color: var(--volt); font-weight: 500; }
+.hero-meta .sep { color: var(--on-dark-4); }
+
+.hero-cta-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
 
 .hero-cta {
-  display: inline-flex; flex-direction: column;
-  font-family: var(--display); font-weight: 900; letter-spacing: 0.02em; text-transform: uppercase;
-  color: var(--ink);
-  background: var(--volt);
-  padding: 22px 32px;
-  border: 2px solid var(--volt);
-  transition: background 0.3s, color 0.3s, transform 0.3s, padding 0.3s;
-  text-align: left;
-  min-width: 280px;
-  position: relative; overflow: hidden;
-}
-.hero-cta::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: var(--bg);
-  transform: translateX(-101%);
-  transition: transform 0.45s var(--ease);
-  z-index: -1;
-}
-.hero-cta:hover { color: var(--volt); transform: translateY(-2px); }
-.hero-cta:hover::before { transform: translateX(0); }
-.hero-cta .cap { font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em; opacity: 0.7; font-weight: 500; }
-.hero-cta .lbl { font-size: 28px; line-height: 1; margin-top: 6px; letter-spacing: -0.005em; }
-
-/* ──────────── MARQUEE ──────────── */
-.marquee {
+  display: inline-flex; align-items: center; gap: 16px;
+  padding: 20px 36px 20px 32px;
   background: var(--volt);
   color: var(--ink);
-  overflow: hidden;
-  padding: 22px 0;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  border: 1px solid var(--volt);
   position: relative;
-  z-index: 2;
+  transition: background 0.4s var(--ease), transform 0.3s var(--ease);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.5);
 }
-.marquee-track {
-  display: flex; gap: 40px;
-  animation: scroll 32s linear infinite;
-  white-space: nowrap;
-  width: max-content;
+.hero-cta:hover { background: var(--volt-bright); transform: translateY(-2px); }
+.hero-cta .arrow {
+  width: 22px; height: 1px;
+  background: var(--ink);
+  position: relative;
+  transition: width 0.3s var(--ease);
 }
-.marquee-track span {
-  font-family: var(--display); font-weight: 900;
-  font-size: clamp(28px, 4vw, 48px);
-  color: var(--ink);
-  display: inline-flex; align-items: center; gap: 40px;
-  text-transform: uppercase; letter-spacing: -0.01em;
+.hero-cta .arrow::after {
+  content: ''; position: absolute; right: 0; top: -3px;
+  width: 7px; height: 7px;
+  border-top: 1px solid var(--ink);
+  border-right: 1px solid var(--ink);
+  transform: rotate(45deg);
 }
-.marquee-track span::after {
-  content: '◆';
-  color: var(--ink);
-  font-size: 16px;
-}
-@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+.hero-cta:hover .arrow { width: 32px; }
 
-/* ──────────── SECTIONS ──────────── */
-section { position: relative; z-index: 2; }
-.shell { padding: 0 var(--gutter); max-width: 1480px; margin: 0 auto; }
-
-.section-spec {
-  display: flex; align-items: center; gap: 16px;
-  padding: 18px 0;
-  border-bottom: var(--line-d);
-  margin-bottom: 56px;
+.hero-cta-secondary {
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 19px 28px;
+  color: var(--on-dark);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  border: 1px solid var(--on-dark-3);
+  transition: border-color 0.3s, color 0.3s;
 }
-.section-spec .num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; color: var(--on-dark-3); }
-.section-spec .lab { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--on-dark-2); }
-.section-spec .lab::before { content: '◢'; color: var(--volt); margin-right: 8px; }
-.section-spec .right { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--on-dark-3); letter-spacing: 0.18em; text-transform: uppercase; }
+.hero-cta-secondary:hover { border-color: var(--volt); color: var(--volt); }
 
-/* Light-on-paper sections */
-.paper {
-  background: var(--paper);
-  color: var(--ink);
+/* Stagger entry */
+.hero-badge, .hero-name, .hero-tagline, .hero-meta, .hero-cta-row {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fade-up 0.95s var(--ease) forwards;
 }
-.paper .section-spec { border-bottom-color: var(--paper-3); }
-.paper .section-spec .num { color: var(--ink-3); }
-.paper .section-spec .lab { color: var(--ink); }
-.paper .lede { color: var(--ink-2); }
+.hero-badge { animation-delay: 0.05s; }
+.hero-name { animation-delay: 0.18s; }
+.hero-tagline { animation-delay: 0.36s; }
+.hero-meta { animation-delay: 0.5s; }
+.hero-cta-row { animation-delay: 0.62s; }
+@keyframes fade-up { to { opacity: 1; transform: translateY(0); } }
 
 /* ──────────── REVEAL ──────────── */
 .reveal {
-  opacity: 0; transform: translateY(28px);
-  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
-  will-change: transform, opacity;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.95s var(--ease), transform 0.95s var(--ease);
+  will-change: opacity, transform;
 }
 .reveal.in { opacity: 1; transform: translateY(0); }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
 
-/* ──────────── CLASSES SECTION ──────────── */
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .hero-badge, .hero-name, .hero-tagline, .hero-meta, .hero-cta-row { opacity: 1; transform: none; }
+}
+
+/* ──────────── STATS BAND ──────────── */
+.stats {
+  background: var(--bg);
+  padding: 100px var(--gutter);
+  border-top: 1px solid var(--bg-4);
+  border-bottom: 1px solid var(--bg-4);
+  position: relative;
+}
+.stats::before {
+  /* Subtle diagonal volt accent strip */
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--volt), transparent);
+  opacity: 0.4;
+}
+.stats-grid {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(20px, 4vw, 60px);
+}
+@media (max-width: 900px) { .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px; } }
+@media (max-width: 540px) { .stats-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+.stat .num {
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 75%;
+  font-size: clamp(72px, 9vw, 144px);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  color: var(--volt);
+  margin-bottom: 10px;
+}
+.stat .num .small {
+  font-size: 0.45em;
+  color: var(--on-dark);
+  margin-left: 0.06em;
+}
+.stat .lab {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--on-dark-2);
+  border-top: 1px solid var(--bg-4);
+  padding-top: 12px;
+  line-height: 1.6;
+}
+.stat .lab .em { color: var(--volt-bright); }
+
+/* ──────────── CLASSES ──────────── */
 .classes {
-  padding: 110px var(--gutter);
-  background: var(--paper);
-  color: var(--ink);
+  padding: 130px var(--gutter);
+  background: var(--bg);
 }
 .classes-head {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: clamp(28px, 5vw, 80px);
-  margin-bottom: 56px;
   align-items: end;
+  margin-bottom: 60px;
+  max-width: var(--max);
+  margin-left: auto; margin-right: auto;
 }
 @media (max-width: 900px) { .classes-head { grid-template-columns: 1fr; gap: 24px; } }
-.classes-head h2 { color: var(--ink); max-width: 14ch; }
-.classes-head h2 .accent { color: var(--volt-deep); }
-.classes-head p { color: var(--ink-2); max-width: 50ch; }
+.classes-head .label { color: var(--volt); }
+.classes-head h2 { color: var(--on-dark); margin: 14px 0 0; }
+.classes-head h2 em { font-style: normal; color: var(--volt); }
+.classes-head p { color: var(--on-dark-2); max-width: 50ch; }
 
 .classes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  border-top: 1.5px solid var(--ink);
-  border-left: 1.5px solid var(--ink);
+  gap: 20px;
+  max-width: var(--max);
+  margin: 0 auto;
 }
-@media (max-width: 900px) { .classes-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 1024px) { .classes-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .classes-grid { grid-template-columns: 1fr; } }
 
 .cls {
-  border-right: 1.5px solid var(--ink);
-  border-bottom: 1.5px solid var(--ink);
-  padding: 32px 28px 28px;
-  display: flex; flex-direction: column;
   position: relative;
-  transition: background 0.3s var(--ease), color 0.3s var(--ease);
-  min-height: 320px;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: var(--bg-2);
+  border: 1px solid var(--bg-4);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  transition: transform 0.45s var(--ease), border-color 0.4s ease;
 }
-.cls:hover { background: var(--ink); color: var(--paper); }
-.cls .num {
-  font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em;
-  color: var(--ink-3); font-weight: 500;
+.cls:hover {
+  transform: translateY(-4px);
+  border-color: var(--volt);
+}
+.cls-photo {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(0.85) brightness(0.78);
+  transition: transform 1.4s var(--ease), filter 0.4s ease;
+}
+.cls:hover .cls-photo {
+  transform: scale(1.06);
+  filter: saturate(1) brightness(0.85);
+}
+.cls-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.2) 30%, rgba(10, 10, 10, 0.95) 100%);
+  pointer-events: none;
+}
+.cls-content {
+  position: relative; z-index: 2;
+  padding: 28px 26px 26px;
+  color: var(--paper);
+}
+.cls-num {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--volt-bright);
+  margin-bottom: 10px;
+}
+.cls-num.heat { color: var(--heat); }
+.cls-name {
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.cls-desc {
+  font-family: var(--body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--on-dark-2);
   margin-bottom: 18px;
 }
-.cls:hover .num { color: var(--volt); }
-.cls h3 {
-  font-family: var(--display); font-weight: 900;
-  font-size: clamp(28px, 3.4vw, 42px);
-  letter-spacing: -0.02em;
-  line-height: 1; text-transform: uppercase;
-  color: var(--ink);
-  margin-bottom: 16px;
+.cls-meta {
+  display: flex; gap: 18px; flex-wrap: wrap;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
-.cls:hover h3 { color: var(--paper); }
-.cls .desc {
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--ink-2);
-  flex: 1;
-  margin-bottom: 24px;
-}
-.cls:hover .desc { color: var(--paper-3); }
-.cls .meta {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  padding-top: 20px;
-  border-top: 1px solid var(--ink-3);
-}
-.cls:hover .meta { border-top-color: var(--ink-3); }
-.cls .meta .k {
-  font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
-  color: var(--ink-3); font-weight: 500; text-transform: uppercase;
-  display: block;
-  margin-bottom: 4px;
-}
-.cls:hover .meta .k { color: var(--volt-bright); }
-.cls .meta .v {
-  font-family: var(--display); font-weight: 900;
-  font-size: 17px; color: var(--ink);
-  letter-spacing: -0.01em; text-transform: uppercase;
-}
-.cls:hover .meta .v { color: var(--paper); }
+.cls-meta .k { color: var(--on-dark-3); }
+.cls-meta .v { color: var(--paper); }
+.cls-meta .v.volt { color: var(--volt); }
 
 /* ──────────── SCHEDULE ──────────── */
 .schedule {
-  padding: 100px var(--gutter);
+  padding: 130px var(--gutter);
+  background: var(--bg-2);
+  border-top: 1px solid var(--bg-4);
+  border-bottom: 1px solid var(--bg-4);
 }
-.schedule-head { margin-bottom: 56px; }
-.schedule-head h2 { color: var(--on-dark); max-width: 14ch; }
-.schedule-head h2 .accent { color: var(--volt); }
-.schedule-head p { color: var(--on-dark-2); max-width: 48ch; margin-top: 18px; }
+.schedule-head { margin-bottom: 56px; max-width: var(--max); margin-left: auto; margin-right: auto; }
+.schedule-head .label { color: var(--volt); }
+.schedule-head h2 { color: var(--on-dark); margin: 14px 0 18px; max-width: 14ch; }
+.schedule-head h2 em { font-style: normal; color: var(--volt); }
+.schedule-head p { color: var(--on-dark-2); max-width: 48ch; }
 
-.sch-table {
-  border: 1.5px solid var(--bg-4);
+.sch {
+  max-width: var(--max);
+  margin: 0 auto;
+  border: 1px solid var(--bg-4);
+  background: var(--bg);
   overflow-x: auto;
 }
 .sch-row {
@@ -490,152 +651,210 @@ section { position: relative; z-index: 2; }
 }
 .sch-row:last-child { border-bottom: none; }
 .sch-row.head {
-  background: var(--bg-2);
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  background: var(--bg-3);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   color: var(--on-dark-2);
 }
 .sch-cell {
-  padding: 14px 12px;
+  padding: 16px 12px;
   border-right: 1px solid var(--bg-3);
-  font-family: var(--body); font-weight: 500;
   display: flex; align-items: center;
+  font-family: var(--body);
+  font-weight: 500;
 }
 .sch-cell:last-child { border-right: none; }
 .sch-cell.time {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
   color: var(--on-dark-2);
   background: var(--bg-2);
 }
-.sch-cell.cls-tag {
-  font-family: var(--display); font-weight: 900;
-  font-size: 12px; letter-spacing: 0.02em; text-transform: uppercase;
-  color: var(--on-dark);
+.sch-cell.tag {
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 85%;
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
-.sch-cell.cls-tag.fight { color: var(--volt); }
-.sch-cell.cls-tag.strength { color: var(--paper); }
-.sch-cell.cls-tag.cardio { color: var(--volt-bright); }
-.sch-cell.cls-tag.cond { color: #FF8C5A; }
-.sch-cell.cls-tag.open { color: var(--ink-4); font-weight: 400; }
+.sch-cell.tag.fight    { color: var(--volt); }
+.sch-cell.tag.strength { color: var(--paper); }
+.sch-cell.tag.cardio   { color: var(--volt-bright); }
+.sch-cell.tag.spar     { color: var(--heat); }
+.sch-cell.tag.open     { color: var(--on-dark-4); font-weight: 400; font-stretch: 100%; }
 @media (max-width: 900px) {
-  .sch-table { font-size: 11px; }
-  .sch-cell { padding: 10px 8px; }
-  .sch-cell.cls-tag { font-size: 10px; }
+  .sch-cell { padding: 11px 8px; font-size: 11px; }
+  .sch-cell.tag { font-size: 10.5px; }
 }
 
 /* ──────────── COACHES ──────────── */
 .coaches {
-  padding: 110px var(--gutter);
-  background: var(--paper);
-  color: var(--ink);
+  padding: 130px var(--gutter);
+  background: var(--bg);
 }
-.coaches-head { margin-bottom: 56px; }
-.coaches-head h2 { color: var(--ink); }
-.coaches-head h2 .accent { color: var(--volt-deep); }
+.coaches-head { margin-bottom: 60px; max-width: var(--max); margin-left: auto; margin-right: auto; }
+.coaches-head .label { color: var(--volt); }
+.coaches-head h2 { color: var(--on-dark); margin: 14px 0 18px; }
+.coaches-head h2 em { font-style: normal; color: var(--volt); }
+.coaches-head p { color: var(--on-dark-2); max-width: 50ch; }
 
 .coach-grid {
+  max-width: var(--max);
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 @media (max-width: 1024px) { .coach-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 540px)  { .coach-grid { grid-template-columns: 1fr; } }
+
 .coach {
-  background: var(--ink);
-  color: var(--paper);
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.4s var(--ease);
-}
-.coach:hover { transform: translateY(-4px); }
-.coach .portrait {
-  aspect-ratio: 1 / 1;
   background: var(--bg-2);
+  border: 1px solid var(--bg-4);
   position: relative;
   overflow: hidden;
+  transition: transform 0.45s var(--ease), border-color 0.4s ease;
 }
-.coach .portrait svg { width: 100%; height: 100%; }
-.coach .info {
-  padding: 22px;
+.coach:hover { transform: translateY(-4px); border-color: var(--volt); }
+.coach-photo {
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-3);
+  filter: saturate(0.85) brightness(0.85);
+  transition: transform 1.2s var(--ease), filter 0.4s ease;
+  position: relative;
 }
-.coach .role {
-  font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+.coach:hover .coach-photo { transform: scale(1.04); filter: saturate(1) brightness(0.95); }
+.coach-photo::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10,10,10,0) 60%, rgba(10,10,10,0.6) 100%);
+  pointer-events: none;
+}
+.coach-info { padding: 22px 22px 22px; }
+.coach-role {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
   color: var(--volt);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .coach h3 {
-  font-family: var(--display); font-weight: 900;
-  font-size: 24px; letter-spacing: -0.01em; text-transform: uppercase;
-  color: var(--paper);
-  margin-bottom: 8px;
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: clamp(22px, 2.4vw, 28px);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--on-dark);
+  margin-bottom: 10px;
+  line-height: 1;
 }
-.coach .stat {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em;
-  color: var(--paper-3); line-height: 1.6;
+.coach .stat-line {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--on-dark-3);
+  line-height: 1.65;
 }
 
 /* ──────────── PRICING ──────────── */
 .pricing {
-  padding: 110px var(--gutter);
+  padding: 130px var(--gutter);
+  background: var(--bg-2);
+  border-top: 1px solid var(--bg-4);
 }
-.pricing-head { margin-bottom: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 80px); align-items: end; }
+.pricing-head {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: clamp(28px, 5vw, 80px);
+  align-items: end;
+  margin-bottom: 60px;
+  max-width: var(--max);
+  margin-left: auto; margin-right: auto;
+}
 @media (max-width: 900px) { .pricing-head { grid-template-columns: 1fr; gap: 24px; } }
-.pricing-head h2 { color: var(--on-dark); max-width: 14ch; }
-.pricing-head h2 .accent { color: var(--volt); }
+.pricing-head .label { color: var(--volt); }
+.pricing-head h2 { color: var(--on-dark); margin: 14px 0 0; max-width: 14ch; }
+.pricing-head h2 em { font-style: normal; color: var(--volt); }
 .pricing-head p { color: var(--on-dark-2); max-width: 48ch; }
 
 .tier-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 @media (max-width: 900px) { .tier-grid { grid-template-columns: 1fr; } }
+
 .tier {
-  background: var(--bg-2);
-  border: 1.5px solid var(--bg-4);
-  padding: 36px 28px;
+  background: var(--bg);
+  border: 1px solid var(--bg-4);
+  padding: 36px 30px;
   display: flex; flex-direction: column;
   position: relative;
   transition: border-color 0.3s, transform 0.3s var(--ease);
 }
 .tier:hover { transform: translateY(-3px); border-color: var(--volt); }
-.tier.featured { border-color: var(--volt); background: linear-gradient(180deg, rgba(197, 255, 0, 0.04) 0%, var(--bg-2) 60%); }
+.tier.featured { border-color: var(--volt); background: linear-gradient(180deg, rgba(197, 255, 0, 0.04) 0%, var(--bg) 50%); }
 .tier.featured::before {
   content: 'Most popular';
   position: absolute; top: -1px; left: -1px;
   background: var(--volt);
   color: var(--ink);
-  font-family: var(--display); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
-  padding: 4px 12px;
+  font-family: var(--mono); font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 5px 12px;
 }
 .tier .name {
-  font-family: var(--display); font-weight: 900;
-  font-size: 24px; letter-spacing: -0.01em; text-transform: uppercase;
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: clamp(22px, 2.4vw, 28px);
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
   color: var(--on-dark);
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
+.tier .price-wrap { margin-bottom: 6px; }
 .tier .price {
-  font-family: var(--display); font-weight: 900;
-  font-size: 84px; line-height: 1; letter-spacing: -0.04em;
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 75%;
+  font-size: clamp(72px, 8vw, 104px);
+  line-height: 1;
+  letter-spacing: -0.04em;
   color: var(--volt);
-  margin-bottom: 4px;
 }
+.tier .price .ccy { font-size: 0.5em; vertical-align: 0.55em; margin-right: 0.04em; }
 .tier .price .small {
-  font-family: var(--body); font-weight: 500;
-  font-size: 18px; color: var(--on-dark-2);
-  letter-spacing: 0; text-transform: none;
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--on-dark-2);
+  letter-spacing: 0;
+  text-transform: none;
   margin-left: 4px;
+  font-stretch: 100%;
+  display: inline-block;
 }
 .tier .per {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   color: var(--on-dark-3);
   margin-bottom: 28px;
 }
-.tier ul {
-  list-style: none;
-  margin-bottom: 32px;
-  flex: 1;
-}
+.tier ul { list-style: none; margin-bottom: 32px; flex: 1; }
 .tier ul li {
-  padding: 10px 0;
+  padding: 11px 0;
   border-bottom: 1px solid var(--bg-4);
   color: var(--on-dark-2);
   font-size: 14px;
@@ -649,11 +868,14 @@ section { position: relative; z-index: 2; }
   display: block;
   background: var(--bg-3);
   color: var(--on-dark);
-  font-family: var(--display); font-weight: 900;
-  font-size: 14px; letter-spacing: 0.02em; text-transform: uppercase;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
   padding: 16px 22px;
   text-align: center;
-  border: 1.5px solid var(--bg-4);
+  border: 1px solid var(--bg-5);
   transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 .tier .cta:hover { background: var(--volt); color: var(--ink); border-color: var(--volt); }
@@ -661,131 +883,168 @@ section { position: relative; z-index: 2; }
 .tier.featured .cta:hover { background: var(--volt-bright); }
 
 /* ──────────── PULL QUOTE ──────────── */
-.pullquote {
-  padding: 110px var(--gutter);
+.testimonial {
+  padding: 130px var(--gutter);
   background: var(--volt);
   color: var(--ink);
   position: relative;
+  overflow: hidden;
 }
-.pullquote::before {
+.testimonial::before {
   content: '"';
   position: absolute;
   top: 30px; left: var(--gutter);
   font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
   font-size: 360px; line-height: 1;
   color: var(--ink);
-  opacity: 0.08;
+  opacity: 0.07;
   user-select: none;
 }
-.pullquote-inner {
-  max-width: 920px; margin: 0 auto;
-  position: relative;
-}
-.pullquote-text {
-  font-family: var(--display); font-weight: 900;
-  font-size: clamp(32px, 4.4vw, 64px);
+.testimonial-inner { max-width: 960px; margin: 0 auto; position: relative; }
+.testimonial-text {
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: clamp(34px, 4.5vw, 68px);
   line-height: 1.05;
   color: var(--ink);
   letter-spacing: -0.025em;
   text-transform: uppercase;
 }
-.pullquote-meta {
+.testimonial-meta {
   margin-top: 36px;
   display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
   color: var(--ink-2);
 }
-.pullquote-meta .name { color: var(--ink); font-weight: 500; }
+.testimonial-meta .name { color: var(--ink); font-weight: 500; }
 
 /* ──────────── HOURS / LOCATION ──────────── */
 .location {
-  padding: 110px var(--gutter);
+  padding: 130px var(--gutter);
+  background: var(--bg);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(40px, 6vw, 100px);
-  align-items: start;
+  max-width: var(--max);
+  margin: 0 auto;
 }
 @media (max-width: 900px) { .location { grid-template-columns: 1fr; padding: 80px var(--gutter); gap: 40px; } }
-.location h2 { color: var(--on-dark); margin-bottom: 28px; }
-.location h2 .accent { color: var(--volt); }
+.location .label { color: var(--volt); }
+.location h2 { color: var(--on-dark); margin: 14px 0 22px; }
+.location h2 em { font-style: normal; color: var(--volt); }
 .location p { color: var(--on-dark-2); margin-bottom: 16px; max-width: 50ch; }
 
 .hours-table {
-  border-top: var(--line-d);
+  border-top: 1px solid var(--bg-4);
   margin-top: 30px;
 }
 .hours-table .row {
-  display: grid; grid-template-columns: 1fr auto;
+  display: grid; grid-template-columns: 1.2fr 1fr;
   align-items: baseline;
   padding: 14px 0;
-  border-bottom: var(--line-d);
+  border-bottom: 1px solid var(--bg-4);
 }
 .hours-table .row.today { color: var(--volt); }
 .hours-table .day {
-  font-family: var(--mono); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--on-dark);
 }
-.hours-table .row.today .day::before {
-  content: '◢ '; color: var(--volt); font-size: 10px;
-}
+.hours-table .row.today .day::before { content: '◢ '; color: var(--volt); font-size: 10px; }
 .hours-table .time {
-  font-family: var(--display); font-weight: 900;
-  font-size: 17px; letter-spacing: -0.005em; text-transform: uppercase;
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 85%;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.005em;
   color: var(--on-dark-2);
+  text-align: right;
 }
-.hours-table .row.today .time { color: var(--volt); }
+.hours-table .row.today .day, .hours-table .row.today .time { color: var(--volt); }
 
 .address-card {
   background: var(--bg-2);
-  border: 1.5px solid var(--bg-4);
-  padding: 36px;
+  border: 1px solid var(--bg-4);
+  padding: 36px 32px;
+  position: relative;
+}
+.address-card::before {
+  content: '';
+  position: absolute; top: -1px; left: -1px;
+  width: 36px; height: 36px;
+  border-top: 2px solid var(--volt);
+  border-left: 2px solid var(--volt);
 }
 .address-card .name {
-  font-family: var(--display); font-weight: 900;
-  font-size: 30px; letter-spacing: -0.015em; text-transform: uppercase;
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: clamp(28px, 3vw, 36px);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--on-dark);
   margin-bottom: 16px;
+  line-height: 0.96;
 }
 .address-card .line {
-  font-family: var(--body); font-size: 15px;
-  color: var(--on-dark-2); line-height: 1.7;
+  font-family: var(--body);
+  font-size: 15px;
+  color: var(--on-dark-2);
+  line-height: 1.65;
+  margin-bottom: 20px;
 }
 .address-card .meta {
-  margin-top: 26px;
-  padding-top: 22px;
+  margin-top: 20px;
+  padding-top: 20px;
   border-top: 1px solid var(--bg-4);
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 14px;
 }
-.address-card .meta div {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+.address-card .meta div { display: flex; flex-direction: column; }
+.address-card .meta .k {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--on-dark-3); margin-bottom: 4px;
 }
-.address-card .meta .k { color: var(--on-dark-3); display: block; margin-bottom: 4px; }
-.address-card .meta .v { color: var(--on-dark); }
+.address-card .meta .v {
+  font-family: var(--body); font-size: 14px; font-weight: 500; color: var(--on-dark);
+}
 
 /* ──────────── FOOTER ──────────── */
 .footer {
   background: #050505;
-  border-top: var(--line-d);
-  padding: 40px var(--gutter) 30px;
+  border-top: 1px solid var(--bg-4);
+  padding: 50px var(--gutter) 30px;
   color: var(--on-dark-3);
 }
 .footer-top {
   display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 24px;
-  padding-bottom: 24px;
+  flex-wrap: wrap; gap: 22px;
+  padding-bottom: 26px;
   border-bottom: 1px solid var(--bg-3);
   margin-bottom: 24px;
 }
-.footer .wordmark { color: var(--on-dark); }
+.footer .brand-mark { color: var(--on-dark); }
 .footer-meta {
   display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 .footer-meta .sep { color: var(--bg-3); }
 .footer .tag { color: var(--volt); }
 .disclaimer {
-  font-family: var(--mono); font-size: 11px;
+  font-family: var(--mono);
+  font-size: 10.5px;
   line-height: 1.7;
   color: var(--on-dark-3);
   text-align: center;
@@ -799,17 +1058,15 @@ section { position: relative; z-index: 2; }
   transition: color 0.3s, border-color 0.3s;
 }
 .disclaimer a:hover { color: var(--volt-bright); border-color: var(--volt-bright); }
-
 @media (max-width: 720px) {
   .footer-top { flex-direction: column; text-align: center; gap: 18px; }
 }
 
 @media (max-width: 720px) {
-  .topbar { padding: 12px 18px; }
-  .hero { padding: 110px 22px 40px; }
-  .hero-headline { margin-top: 4vh; }
-  .hero-strap { flex-direction: column; align-items: stretch; gap: 24px; }
-  .hero-cta { min-width: 0; width: 100%; align-items: center; text-align: center; }
+  .stats, .classes, .schedule, .coaches, .pricing, .testimonial, .location {
+    padding: 80px 22px;
+  }
+  .hero { padding: 140px 22px 70px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -819,594 +1076,521 @@ section { position: relative; z-index: 2; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .hero-headline .line span { transform: none; opacity: 1; }
-  .reveal { opacity: 1; transform: none; }
 }
   </style>
 </head>
 <body>
 
-  <!-- Custom square cursor -->
-  <div class="cursor-square" aria-hidden="true"></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
+<!-- ═══════════════ STATUS BAR ═══════════════ -->
+<div class="status-bar">
+  <span class="left">
+    <span class="live" aria-hidden="true"></span>
+    <span class="training">Training Now · 14 In</span>
+    <span class="sep">·</span>
+    <span>Next Class · 14:30 · Box Fund.</span>
+    <span class="sep">·</span>
+    <span>Coach · L. Carrigan</span>
+  </span>
+  <span class="right">Bridgeton · Glasgow G40</span>
+</div>
 
-  <header class="topbar" id="topbar">
-    <a href="#top" class="topbar-id" aria-label="BOXWORKS Athletic Co. — home">
-      <span class="wordmark">
-        <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-          <!-- Hexagonal shield with volt B inside -->
-          <polygon points="24,4 42,15 42,33 24,44 6,33 6,15" stroke="#C5FF00" stroke-width="1.6" fill="none"/>
-          <polygon points="24,8 38,17 38,31 24,40 10,31 10,17" stroke="#C5FF00" stroke-width="0.8" fill="none" opacity="0.5"/>
-          <text x="24" y="30" font-family="Archivo Black, sans-serif" font-size="18" fill="#C5FF00" text-anchor="middle" font-weight="900">B</text>
-        </svg>
-        <span class="text">
-          <span class="name">BOXWORKS</span>
-          <span class="sub">Athletic Co. · Bridgeton</span>
-        </span>
-      </span>
-    </a>
-    <a href="#pricing" class="topbar-cta" data-cursor="hover">Join →</a>
-  </header>
+<!-- ═══════════════ TOPBAR ═══════════════ -->
+<header class="topbar" id="topbar">
+  <a href="#top" class="brand-mark" aria-label="BOXWORKS Athletic Co. — home">
+    <span class="brand-square" aria-hidden="true">BX</span>
+    <span class="brand-text">
+      <span class="name">BOXWORKS</span>
+      <span class="sub">Athletic Co. · Bridgeton</span>
+    </span>
+  </a>
 
-  <section class="hero" id="top">
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#classes">Classes</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#coaches">Coaches</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
 
-    <div class="hero-top">
-      <div class="row">
-        <span class="live-badge">
-          <span class="dot"></span>
-          <span>Now training · 14 in</span>
-        </span>
-      </div>
-      <div>
-        <span class="mono">Bridgeton · Glasgow G40</span>
-      </div>
-    </div>
+  <a href="#pricing" class="topbar-cta">Start a Trial →</a>
+</header>
 
-    <!-- Hero stat -->
-    <div class="hero-stat" aria-hidden="true">
-      <span class="num">28</span>
-      <span class="lab">Classes per week</span>
-    </div>
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="top">
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
 
-    <div class="hero-headline">
-      <h1 class="display">
-        <span class="line"><span>Train hard.</span></span>
-        <span class="line"><span>Train smart.</span></span>
-        <span class="line"><span>Train here.</span></span>
-      </h1>
-    </div>
+  <div class="hero-inner">
+    <span class="hero-badge">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Floor Open · Walk Up &amp; Train</span>
+    </span>
 
-    <div class="hero-strap">
-      <div class="hero-strap-l">
-        <p class="lede">Independent boxing &amp; strength gym in Bridgeton. Open-floor lifting, classes on the hour, head coaches who actually coach. No mirror posing, no monthly contracts you can't leave.</p>
-        <div class="ticker">
-          <span>Boxing</span>
-          <span>Strength</span>
-          <span>Conditioning</span>
-          <span>Open floor</span>
-        </div>
-      </div>
-      <a href="#pricing" class="hero-cta" data-cursor="hover">
-        <span class="cap">First session free</span>
-        <span class="lbl">Book a trial →</span>
-      </a>
-    </div>
-  </section>
+    <h1 class="hero-name">
+      Feel<br>the <span class="volt">Work.</span>
+      <span class="accent">— Boxing &amp; Strength · Bridgeton —</span>
+    </h1>
 
-  <!-- Marquee belt — volt -->
-  <section class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Boxing Fundamentals</span>
-      <span>Strength &amp; Power</span>
-      <span>Sparring</span>
-      <span>HIIT Conditioning</span>
-      <span>Open Mat</span>
-      <span>Weightlifting</span>
-      <span>Bag Work</span>
-      <span>Pad Sessions</span>
-      <span>Boxing Fundamentals</span>
-      <span>Strength &amp; Power</span>
-      <span>Sparring</span>
-      <span>HIIT Conditioning</span>
-      <span>Open Mat</span>
-      <span>Weightlifting</span>
-      <span>Bag Work</span>
-      <span>Pad Sessions</span>
-    </div>
-  </section>
-
-  <!-- ─────────── CLASSES ─────────── -->
-  <section class="classes" id="classes">
-    <div class="shell">
-      <div class="section-spec">
-        <span class="num">01 / 06</span>
-        <span class="lab">The classes</span>
-        <span class="right">All levels welcome</span>
-      </div>
-      <div class="classes-head">
-        <h2 class="reveal">Six<br>classes. <span class="accent">One floor.</span></h2>
-        <p class="lede reveal">Every class capped at twelve people so coaches can actually coach. Drop in for one, or stack three a week if you've signed up for full membership.</p>
-      </div>
-      <div class="classes-grid">
-
-        <article class="cls reveal">
-          <div class="num">01 · STRIKING</div>
-          <h3>Boxing<br>Fundamentals</h3>
-          <p class="desc">Footwork, jab-cross, slip and counter. The proper basics — done slow, then drilled fast. No prior experience needed.</p>
-          <div class="meta">
-            <div><span class="k">Duration</span><span class="v">60 min</span></div>
-            <div><span class="k">Level</span><span class="v">Open</span></div>
-          </div>
-        </article>
-
-        <article class="cls reveal">
-          <div class="num">02 · STRENGTH</div>
-          <h3>Strength<br>&amp; Power</h3>
-          <p class="desc">Compound barbell work — squat, deadlift, bench, press, row. Coached programming, six chairs, no waiting on a rack.</p>
-          <div class="meta">
-            <div><span class="k">Duration</span><span class="v">75 min</span></div>
-            <div><span class="k">Level</span><span class="v">All</span></div>
-          </div>
-        </article>
-
-        <article class="cls reveal">
-          <div class="num">03 · STRIKING</div>
-          <h3>Pad<br>Sessions</h3>
-          <p class="desc">One-on-one or two-on-one with a coach. Combinations, defence, conditioning rounds. Booked separately on the schedule.</p>
-          <div class="meta">
-            <div><span class="k">Duration</span><span class="v">30 min</span></div>
-            <div><span class="k">Level</span><span class="v">All</span></div>
-          </div>
-        </article>
-
-        <article class="cls reveal">
-          <div class="num">04 · CARDIO</div>
-          <h3>HIIT<br>Conditioning</h3>
-          <p class="desc">Bag rounds, burpees, sled, rower. Intervals built around boxing rounds — three on, one off. Bring water.</p>
-          <div class="meta">
-            <div><span class="k">Duration</span><span class="v">45 min</span></div>
-            <div><span class="k">Level</span><span class="v">Any</span></div>
-          </div>
-        </article>
-
-        <article class="cls reveal">
-          <div class="num">05 · OPEN FLOOR</div>
-          <h3>Open<br>Floor</h3>
-          <p class="desc">Train on your own programme — squat racks, dumbbells, bags, mats. Coaches on the floor for form checks if you want them.</p>
-          <div class="meta">
-            <div><span class="k">Duration</span><span class="v">90 min</span></div>
-            <div><span class="k">Level</span><span class="v">Self-led</span></div>
-          </div>
-        </article>
-
-        <article class="cls reveal">
-          <div class="num">06 · ADVANCED</div>
-          <h3>Sparring<br>(Approval)</h3>
-          <p class="desc">Light to medium technical sparring, head coach in the ring. Approval-only — three months of fundamentals first.</p>
-          <div class="meta">
-            <div><span class="k">Duration</span><span class="v">60 min</span></div>
-            <div><span class="k">Level</span><span class="v">Adv.</span></div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─────────── SCHEDULE ─────────── -->
-  <section class="schedule" id="schedule">
-    <div class="shell">
-      <div class="section-spec">
-        <span class="num">02 / 06</span>
-        <span class="lab">This week</span>
-        <span class="right">Mon — Sun · Live</span>
-      </div>
-      <div class="schedule-head reveal">
-        <h2>The <span class="accent">week.</span></h2>
-        <p class="lede">Twenty-eight classes from Monday morning through Sunday afternoon. Coaches assigned, capacity capped, drop-ins welcome where space.</p>
-      </div>
-      <div class="sch-table reveal">
-        <div class="sch-row head">
-          <div class="sch-cell">Time</div>
-          <div class="sch-cell">Mon</div>
-          <div class="sch-cell">Tue</div>
-          <div class="sch-cell">Wed</div>
-          <div class="sch-cell">Thu</div>
-          <div class="sch-cell">Fri</div>
-          <div class="sch-cell">Sat</div>
-          <div class="sch-cell">Sun</div>
-        </div>
-        <div class="sch-row">
-          <div class="sch-cell time">06:30</div>
-          <div class="sch-cell cls-tag fight">Box Fund.</div>
-          <div class="sch-cell cls-tag strength">Strength</div>
-          <div class="sch-cell cls-tag fight">Box Fund.</div>
-          <div class="sch-cell cls-tag strength">Strength</div>
-          <div class="sch-cell cls-tag cardio">HIIT</div>
-          <div class="sch-cell cls-tag open">—</div>
-          <div class="sch-cell cls-tag open">—</div>
-        </div>
-        <div class="sch-row">
-          <div class="sch-cell time">09:00</div>
-          <div class="sch-cell cls-tag strength">Strength</div>
-          <div class="sch-cell cls-tag cardio">HIIT</div>
-          <div class="sch-cell cls-tag fight">Pads</div>
-          <div class="sch-cell cls-tag cardio">HIIT</div>
-          <div class="sch-cell cls-tag strength">Strength</div>
-          <div class="sch-cell cls-tag fight">Box Fund.</div>
-          <div class="sch-cell cls-tag open">Open</div>
-        </div>
-        <div class="sch-row">
-          <div class="sch-cell time">12:00</div>
-          <div class="sch-cell cls-tag open">Open</div>
-          <div class="sch-cell cls-tag open">Open</div>
-          <div class="sch-cell cls-tag open">Open</div>
-          <div class="sch-cell cls-tag open">Open</div>
-          <div class="sch-cell cls-tag open">Open</div>
-          <div class="sch-cell cls-tag strength">Strength</div>
-          <div class="sch-cell cls-tag open">Open</div>
-        </div>
-        <div class="sch-row">
-          <div class="sch-cell time">17:30</div>
-          <div class="sch-cell cls-tag fight">Pads</div>
-          <div class="sch-cell cls-tag fight">Box Fund.</div>
-          <div class="sch-cell cls-tag strength">Strength</div>
-          <div class="sch-cell cls-tag fight">Pads</div>
-          <div class="sch-cell cls-tag cardio">HIIT</div>
-          <div class="sch-cell cls-tag open">—</div>
-          <div class="sch-cell cls-tag open">—</div>
-        </div>
-        <div class="sch-row">
-          <div class="sch-cell time">19:00</div>
-          <div class="sch-cell cls-tag cardio">HIIT</div>
-          <div class="sch-cell cls-tag strength">Strength</div>
-          <div class="sch-cell cls-tag cond">Sparring</div>
-          <div class="sch-cell cls-tag strength">Strength</div>
-          <div class="sch-cell cls-tag cond">Sparring</div>
-          <div class="sch-cell cls-tag open">—</div>
-          <div class="sch-cell cls-tag open">—</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─────────── COACHES ─────────── -->
-  <section class="coaches" id="coaches">
-    <div class="shell">
-      <div class="section-spec">
-        <span class="num">03 / 06</span>
-        <span class="lab">The coaches</span>
-        <span class="right">Floor staff · 4</span>
-      </div>
-      <div class="coaches-head reveal">
-        <h2>Coaches<br>who <span class="accent">coach.</span></h2>
-      </div>
-      <div class="coach-grid">
-
-        <article class="coach reveal">
-          <div class="portrait">
-            <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-label="Coach 1">
-              <defs>
-                <linearGradient id="c1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1F1F1F"/><stop offset="100%" stop-color="#0A0A0A"/></linearGradient>
-              </defs>
-              <rect width="300" height="300" fill="url(#c1)"/>
-              <!-- Abstract figure silhouette -->
-              <g fill="#C5FF00">
-                <circle cx="150" cy="110" r="38"/>
-              </g>
-              <g fill="#1F1F1F">
-                <path d="M88 300 Q88 200 150 200 Q212 200 212 300 Z"/>
-              </g>
-              <g stroke="#C5FF00" stroke-width="1" fill="none" opacity="0.6">
-                <path d="M88 300 Q88 200 150 200 Q212 200 212 300"/>
-              </g>
-              <!-- Boxing wraps -->
-              <g stroke="#C5FF00" stroke-width="2" fill="none">
-                <line x1="115" y1="220" x2="125" y2="280"/>
-                <line x1="125" y1="220" x2="135" y2="280"/>
-              </g>
-              <text x="20" y="285" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6B66" letter-spacing="2.5">— 01 —</text>
-            </svg>
-          </div>
-          <div class="info">
-            <div class="role">Head Coach · Boxing</div>
-            <h3>L. Carrigan</h3>
-            <p class="stat">Former amateur · 14 yrs coaching · Three regional titles produced</p>
-          </div>
-        </article>
-
-        <article class="coach reveal">
-          <div class="portrait">
-            <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-label="Coach 2">
-              <defs>
-                <linearGradient id="c2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2A2A2A"/><stop offset="100%" stop-color="#0F0F0F"/></linearGradient>
-              </defs>
-              <rect width="300" height="300" fill="url(#c2)"/>
-              <g fill="#F2F2EF" opacity="0.95">
-                <circle cx="150" cy="110" r="38"/>
-              </g>
-              <g fill="#1F1F1F">
-                <path d="M85 300 Q85 195 150 195 Q215 195 215 300 Z"/>
-              </g>
-              <g stroke="#F2F2EF" stroke-width="1" fill="none" opacity="0.6">
-                <path d="M85 300 Q85 195 150 195 Q215 195 215 300"/>
-              </g>
-              <!-- Barbell across shoulders -->
-              <line x1="50" y1="195" x2="250" y2="195" stroke="#C5FF00" stroke-width="3"/>
-              <circle cx="60" cy="195" r="14" fill="#C5FF00"/>
-              <circle cx="240" cy="195" r="14" fill="#C5FF00"/>
-              <text x="20" y="285" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6B66" letter-spacing="2.5">— 02 —</text>
-            </svg>
-          </div>
-          <div class="info">
-            <div class="role">Head Coach · Strength</div>
-            <h3>D. Brennan</h3>
-            <p class="stat">SBD lifter · BWF L3 · 9 yrs coaching · Powerlifting + general strength</p>
-          </div>
-        </article>
-
-        <article class="coach reveal">
-          <div class="portrait">
-            <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-label="Coach 3">
-              <defs>
-                <linearGradient id="c3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1A1A1A"/><stop offset="100%" stop-color="#0A0A0A"/></linearGradient>
-              </defs>
-              <rect width="300" height="300" fill="url(#c3)"/>
-              <g fill="#C5FF00">
-                <circle cx="150" cy="115" r="36"/>
-              </g>
-              <g fill="#1F1F1F">
-                <path d="M90 300 Q90 205 150 205 Q210 205 210 300 Z"/>
-              </g>
-              <!-- Jump rope -->
-              <g stroke="#C5FF00" stroke-width="2" fill="none">
-                <path d="M115 240 Q90 280 60 240 Q30 200 60 165"/>
-                <path d="M185 240 Q210 280 240 240 Q270 200 240 165"/>
-              </g>
-              <text x="20" y="285" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6B66" letter-spacing="2.5">— 03 —</text>
-            </svg>
-          </div>
-          <div class="info">
-            <div class="role">Coach · Conditioning</div>
-            <h3>F. Whyte</h3>
-            <p class="stat">Boxer-turned-coach · NSCA-CPT · 6 yrs coaching · HIIT &amp; Conditioning</p>
-          </div>
-        </article>
-
-        <article class="coach reveal">
-          <div class="portrait">
-            <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-label="Coach 4">
-              <defs>
-                <linearGradient id="c4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#252525"/><stop offset="100%" stop-color="#0A0A0A"/></linearGradient>
-              </defs>
-              <rect width="300" height="300" fill="url(#c4)"/>
-              <g fill="#F2F2EF" opacity="0.95">
-                <circle cx="150" cy="105" r="40"/>
-              </g>
-              <g fill="#1F1F1F">
-                <path d="M88 300 Q88 200 150 200 Q212 200 212 300 Z"/>
-              </g>
-              <!-- Pad mitts -->
-              <ellipse cx="100" cy="220" rx="24" ry="14" fill="#C5FF00" transform="rotate(-15 100 220)"/>
-              <ellipse cx="200" cy="220" rx="24" ry="14" fill="#C5FF00" transform="rotate(15 200 220)"/>
-              <text x="20" y="285" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6B66" letter-spacing="2.5">— 04 —</text>
-            </svg>
-          </div>
-          <div class="info">
-            <div class="role">Coach · Pads &amp; Sparring</div>
-            <h3>K. Aitken</h3>
-            <p class="stat">Active amateur · 8 yrs ring time · Pads, defensive work, sparring</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─────────── PRICING ─────────── -->
-  <section class="pricing" id="pricing">
-    <div class="shell">
-      <div class="section-spec">
-        <span class="num">04 / 06</span>
-        <span class="lab">Memberships</span>
-        <span class="right">No long-term tie-in</span>
-      </div>
-      <div class="pricing-head">
-        <h2 class="reveal">Three<br><span class="accent">tiers.</span></h2>
-        <p class="lede reveal">Rolling monthly. Cancel any time, three days' notice. First session is free, no card needed.</p>
-      </div>
-      <div class="tier-grid">
-
-        <div class="tier reveal">
-          <div class="name">Drop-In</div>
-          <div class="price">£12<span class="small">/class</span></div>
-          <div class="per">Per session</div>
-          <ul>
-            <li>Any single class</li>
-            <li>No membership required</li>
-            <li>Pay at the door</li>
-            <li>First class is free</li>
-          </ul>
-          <a href="#" class="cta" data-cursor="hover">Book a class</a>
-        </div>
-
-        <div class="tier featured reveal">
-          <div class="name">Full Access</div>
-          <div class="price">£89<span class="small">/mo</span></div>
-          <div class="per">Best value</div>
-          <ul>
-            <li>Unlimited classes</li>
-            <li>Unlimited open floor</li>
-            <li>Members-only events</li>
-            <li>Programme on request</li>
-            <li>Bring a friend free, monthly</li>
-          </ul>
-          <a href="#" class="cta" data-cursor="hover">Start trial</a>
-        </div>
-
-        <div class="tier reveal">
-          <div class="name">Off-Peak</div>
-          <div class="price">£59<span class="small">/mo</span></div>
-          <div class="per">Mon — Fri before 16:00</div>
-          <ul>
-            <li>Unlimited off-peak classes</li>
-            <li>Unlimited off-peak open floor</li>
-            <li>Daytime only Mon — Fri</li>
-            <li>Programme on request</li>
-          </ul>
-          <a href="#" class="cta" data-cursor="hover">Start trial</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─────────── PULL QUOTE ─────────── -->
-  <section class="pullquote">
-    <div class="pullquote-inner reveal">
-      <p class="pullquote-text">
-        Best gym in the east end. Real coaching, real people, no influencer nonsense — and the only place I've ever stuck with for more than three months.
-      </p>
-      <div class="pullquote-meta">
-        <span class="name">— Member · 14 months</span>
-        <span>·</span>
-        <span>BOXWORKS Bridgeton</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─────────── HOURS / LOCATION ─────────── -->
-  <section class="location" id="visit">
-    <div class="reveal">
-      <div class="section-spec">
-        <span class="num">05 / 06</span>
-        <span class="lab">Hours</span>
-      </div>
-      <h2>Open <span class="accent">early.</span><br>Train late.</h2>
-      <p class="lede">Six o'clock starts most weekdays, doors close at twenty-one hundred. Saturday and Sunday on a reduced schedule.</p>
-      <div class="hours-table">
-        <div class="row"><span class="day">Monday</span><span class="time">06:00 — 21:00</span></div>
-        <div class="row"><span class="day">Tuesday</span><span class="time">06:00 — 21:00</span></div>
-        <div class="row"><span class="day">Wednesday</span><span class="time">06:00 — 21:00</span></div>
-        <div class="row today"><span class="day">Thursday · Today</span><span class="time">06:00 — 21:00</span></div>
-        <div class="row"><span class="day">Friday</span><span class="time">06:00 — 20:00</span></div>
-        <div class="row"><span class="day">Saturday</span><span class="time">08:00 — 14:00</span></div>
-        <div class="row"><span class="day">Sunday</span><span class="time">09:00 — 13:00</span></div>
-      </div>
-    </div>
-    <div class="reveal">
-      <div class="section-spec">
-        <span class="num">06 / 06</span>
-        <span class="lab">Find us</span>
-      </div>
-      <div class="address-card">
-        <div class="name">BOXWORKS<br>Athletic Co.</div>
-        <p class="line">Independent boxing &amp; strength gym, second-floor warehouse studio. Open-floor lifting, six-rack strength bay, fully kitted boxing ring on a coach-only schedule.</p>
-        <div class="meta">
-          <div><span class="k">Studio</span><span class="v">Bridgeton G40</span></div>
-          <div><span class="k">First class</span><span class="v">Free</span></div>
-          <div><span class="k">Lockers</span><span class="v">Members</span></div>
-          <div><span class="k">Showers</span><span class="v">Yes · 6</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-top">
-      <span class="wordmark">
-        <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-          <polygon points="24,4 42,15 42,33 24,44 6,33 6,15" stroke="#C5FF00" stroke-width="1.6" fill="none"/>
-          <polygon points="24,8 38,17 38,31 24,40 10,31 10,17" stroke="#C5FF00" stroke-width="0.8" fill="none" opacity="0.5"/>
-          <text x="24" y="30" font-family="Archivo Black, sans-serif" font-size="18" fill="#C5FF00" text-anchor="middle" font-weight="900">B</text>
-        </svg>
-        <span class="text">
-          <span class="name">BOXWORKS</span>
-          <span class="sub">Athletic Co. · Bridgeton</span>
-        </span>
-      </span>
-      <div class="footer-meta">
-        <span>© 2026 BOXWORKS Athletic Co.</span>
-        <span class="sep">·</span>
-        <span>Glasgow</span>
-        <span class="sep">·</span>
-        <span class="tag">G40</span>
-      </div>
-    </div>
-    <p class="disclaimer">
-      Portfolio demo by GrantOps Consulting — no real business sits at this address. View our work at <a href="https://grantopsconsulting.com/" rel="noopener">grantopsconsulting.com</a>.
+    <p class="hero-tagline">
+      Independent gym at the foot of Bridgeton Cross. Six chairs, six coaches, 28 classes a week. Boxing, strength, conditioning — coached by people who actually still train.
     </p>
-  </footer>
 
-  <script>
-    (function () {
-      var topbar = document.getElementById('topbar');
-      var ticking = false;
-      function onScroll() {
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            if (window.scrollY > 24) topbar.classList.add('lit');
-            else topbar.classList.remove('lit');
-            ticking = false;
-          });
-          ticking = true;
-        }
-      }
-      window.addEventListener('scroll', onScroll, { passive: true });
+    <div class="hero-meta">
+      <span><span class="v">28</span> Classes / Week</span>
+      <span class="sep">·</span>
+      <span><span class="v">12</span> Per Class · Coached</span>
+      <span class="sep">·</span>
+      <span><span class="v">No</span> Long Tie-In · Cancel Any Time</span>
+    </div>
 
-      var reveals = document.querySelectorAll('.reveal');
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) {
-            if (e.isIntersecting) {
-              e.target.classList.add('in');
-              io.unobserve(e.target);
-            }
-          });
-        }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
-        reveals.forEach(function (r) { io.observe(r); });
-      } else {
-        reveals.forEach(function (r) { r.classList.add('in'); });
-      }
+    <div class="hero-cta-row">
+      <a href="#pricing" class="hero-cta">
+        Start a Trial
+        <span class="arrow"></span>
+      </a>
+      <a href="#schedule" class="hero-cta-secondary">View Schedule</a>
+    </div>
+  </div>
+</section>
 
-      // Custom square cursor
-      var sq = document.querySelector('.cursor-square');
-      var dot = document.querySelector('.cursor-dot');
-      var supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-      if (sq && dot && supportsHover) {
-        var rx = window.innerWidth / 2, ry = window.innerHeight / 2;
-        var lrx = rx, lry = ry;
-        function tick() {
-          lrx += (rx - lrx) * 0.2;
-          lry += (ry - lry) * 0.2;
-          sq.style.transform  = 'translate(' + lrx + 'px, ' + lry + 'px) translate(-50%, -50%)';
-          dot.style.transform = 'translate(' + rx  + 'px, ' + ry  + 'px) translate(-50%, -50%)';
-          window.requestAnimationFrame(tick);
-        }
-        window.addEventListener('mousemove', function (e) { rx = e.clientX; ry = e.clientY; });
-        window.addEventListener('mouseleave', function () { sq.style.opacity = 0; dot.style.opacity = 0; });
-        window.addEventListener('mouseenter', function () { sq.style.opacity = 1; dot.style.opacity = 1; });
-        document.querySelectorAll('a, button, [data-cursor="hover"], .coach, .cls, .tier, .sch-row:not(.head) .cls-tag:not(.open)').forEach(function (el) {
-          el.addEventListener('mouseenter', function () { document.body.classList.add('is-cursor-hover'); });
-          el.addEventListener('mouseleave', function () { document.body.classList.remove('is-cursor-hover'); });
+<!-- ═══════════════ STATS BAND ═══════════════ -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat reveal">
+      <div class="num" data-target="28"><span data-counter>28</span></div>
+      <div class="lab">Classes <span class="em">every week</span> across boxing, strength &amp; conditioning</div>
+    </div>
+    <div class="stat reveal">
+      <div class="num" data-target="6"><span data-counter>6</span></div>
+      <div class="lab">Coaches <span class="em">on the floor</span> · former amateurs &amp; certified S&amp;C</div>
+    </div>
+    <div class="stat reveal">
+      <div class="num" data-target="12"><span data-counter>12</span></div>
+      <div class="lab">Per class <span class="em">capped</span> · so coaches can actually coach</div>
+    </div>
+    <div class="stat reveal">
+      <div class="num"><span data-counter data-target="100">100</span><span class="small">%</span></div>
+      <div class="lab">Rolling monthly <span class="em">no long tie-in</span> · three days notice</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CLASSES ═══════════════ -->
+<section class="classes" id="classes">
+  <div class="classes-head reveal">
+    <div>
+      <span class="label">The Classes</span>
+      <h2>Six classes,<br><em>one floor.</em></h2>
+    </div>
+    <p class="lede">Every class capped at twelve so coaches can actually coach. Drop in for one, stack three a week if you've signed up for full membership, or train solo on the open floor.</p>
+  </div>
+
+  <div class="classes-grid">
+
+    <article class="cls reveal">
+      <div class="cls-photo" style="background-image:url('https://images.unsplash.com/photo-1636581563867-1ecab574858f?w=900&fit=crop&q=80&auto=format');"></div>
+      <div class="cls-overlay"></div>
+      <div class="cls-content">
+        <div class="cls-num">01 · Striking</div>
+        <h3 class="cls-name">Boxing<br>Fundamentals</h3>
+        <p class="cls-desc">Footwork, jab-cross, slip and counter. The proper basics — done slow, then drilled fast. No prior experience needed.</p>
+        <div class="cls-meta">
+          <span><span class="k">Duration</span> <span class="v">60 Min</span></span>
+          <span><span class="k">Level</span> <span class="v volt">Open</span></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cls reveal">
+      <div class="cls-photo" style="background-image:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=900&fit=crop&q=80&auto=format');"></div>
+      <div class="cls-overlay"></div>
+      <div class="cls-content">
+        <div class="cls-num">02 · Strength</div>
+        <h3 class="cls-name">Strength<br>&amp; Power</h3>
+        <p class="cls-desc">Compound barbell work — squat, deadlift, bench, press, row. Coached programming, six racks, no waiting.</p>
+        <div class="cls-meta">
+          <span><span class="k">Duration</span> <span class="v">75 Min</span></span>
+          <span><span class="k">Level</span> <span class="v volt">All</span></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cls reveal">
+      <div class="cls-photo" style="background-image:url('https://images.unsplash.com/photo-1716307043003-dbe6a5cc496e?w=900&fit=crop&q=80&auto=format');"></div>
+      <div class="cls-overlay"></div>
+      <div class="cls-content">
+        <div class="cls-num">03 · Striking</div>
+        <h3 class="cls-name">Pad<br>Sessions</h3>
+        <p class="cls-desc">One-on-one or two-on-one with a coach. Combinations, defence, conditioning rounds. Booked separately.</p>
+        <div class="cls-meta">
+          <span><span class="k">Duration</span> <span class="v">30 Min</span></span>
+          <span><span class="k">Level</span> <span class="v volt">All</span></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cls reveal">
+      <div class="cls-photo" style="background-image:url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=900&fit=crop&q=80&auto=format');"></div>
+      <div class="cls-overlay"></div>
+      <div class="cls-content">
+        <div class="cls-num">04 · Cardio</div>
+        <h3 class="cls-name">HIIT<br>Conditioning</h3>
+        <p class="cls-desc">Bag rounds, burpees, sled, rower. Intervals built around boxing rounds — three on, one off. Bring water.</p>
+        <div class="cls-meta">
+          <span><span class="k">Duration</span> <span class="v">45 Min</span></span>
+          <span><span class="k">Level</span> <span class="v volt">Any</span></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cls reveal">
+      <div class="cls-photo" style="background-image:url('https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=900&fit=crop&q=80&auto=format');"></div>
+      <div class="cls-overlay"></div>
+      <div class="cls-content">
+        <div class="cls-num">05 · Open Floor</div>
+        <h3 class="cls-name">Open<br>Floor</h3>
+        <p class="cls-desc">Train on your own programme — racks, dumbbells, bags, mats. Coaches on the floor for form checks.</p>
+        <div class="cls-meta">
+          <span><span class="k">Duration</span> <span class="v">90 Min</span></span>
+          <span><span class="k">Level</span> <span class="v volt">Self-Led</span></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cls reveal">
+      <div class="cls-photo" style="background-image:url('https://images.unsplash.com/photo-1651707999601-cba87015439c?w=900&fit=crop&q=80&auto=format');"></div>
+      <div class="cls-overlay"></div>
+      <div class="cls-content">
+        <div class="cls-num heat">06 · Advanced</div>
+        <h3 class="cls-name">Sparring<br>(Approval)</h3>
+        <p class="cls-desc">Light to medium technical sparring, head coach in the ring. Approval-only — three months of fundamentals first.</p>
+        <div class="cls-meta">
+          <span><span class="k">Duration</span> <span class="v">60 Min</span></span>
+          <span><span class="k">Level</span> <span class="v volt">Adv.</span></span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ═══════════════ SCHEDULE ═══════════════ -->
+<section class="schedule" id="schedule">
+  <div class="schedule-head reveal">
+    <span class="label">This Week</span>
+    <h2>The <em>week.</em></h2>
+    <p class="lede">Twenty-eight classes Mon–Sun. Coaches assigned, capacity capped, drop-ins welcome where space.</p>
+  </div>
+
+  <div class="sch reveal">
+    <div class="sch-row head">
+      <div class="sch-cell">Time</div>
+      <div class="sch-cell">Mon</div>
+      <div class="sch-cell">Tue</div>
+      <div class="sch-cell">Wed</div>
+      <div class="sch-cell">Thu</div>
+      <div class="sch-cell">Fri</div>
+      <div class="sch-cell">Sat</div>
+      <div class="sch-cell">Sun</div>
+    </div>
+    <div class="sch-row">
+      <div class="sch-cell time">06:30</div>
+      <div class="sch-cell tag fight">Box Fund.</div>
+      <div class="sch-cell tag strength">Strength</div>
+      <div class="sch-cell tag fight">Box Fund.</div>
+      <div class="sch-cell tag strength">Strength</div>
+      <div class="sch-cell tag cardio">HIIT</div>
+      <div class="sch-cell tag open">—</div>
+      <div class="sch-cell tag open">—</div>
+    </div>
+    <div class="sch-row">
+      <div class="sch-cell time">09:00</div>
+      <div class="sch-cell tag strength">Strength</div>
+      <div class="sch-cell tag cardio">HIIT</div>
+      <div class="sch-cell tag fight">Pads</div>
+      <div class="sch-cell tag cardio">HIIT</div>
+      <div class="sch-cell tag strength">Strength</div>
+      <div class="sch-cell tag fight">Box Fund.</div>
+      <div class="sch-cell tag open">Open</div>
+    </div>
+    <div class="sch-row">
+      <div class="sch-cell time">12:00</div>
+      <div class="sch-cell tag open">Open</div>
+      <div class="sch-cell tag open">Open</div>
+      <div class="sch-cell tag open">Open</div>
+      <div class="sch-cell tag open">Open</div>
+      <div class="sch-cell tag open">Open</div>
+      <div class="sch-cell tag strength">Strength</div>
+      <div class="sch-cell tag open">Open</div>
+    </div>
+    <div class="sch-row">
+      <div class="sch-cell time">17:30</div>
+      <div class="sch-cell tag fight">Pads</div>
+      <div class="sch-cell tag fight">Box Fund.</div>
+      <div class="sch-cell tag strength">Strength</div>
+      <div class="sch-cell tag fight">Pads</div>
+      <div class="sch-cell tag cardio">HIIT</div>
+      <div class="sch-cell tag open">—</div>
+      <div class="sch-cell tag open">—</div>
+    </div>
+    <div class="sch-row">
+      <div class="sch-cell time">19:00</div>
+      <div class="sch-cell tag cardio">HIIT</div>
+      <div class="sch-cell tag strength">Strength</div>
+      <div class="sch-cell tag spar">Sparring</div>
+      <div class="sch-cell tag strength">Strength</div>
+      <div class="sch-cell tag spar">Sparring</div>
+      <div class="sch-cell tag open">—</div>
+      <div class="sch-cell tag open">—</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ COACHES ═══════════════ -->
+<section class="coaches" id="coaches">
+  <div class="coaches-head reveal">
+    <span class="label">The Coaches</span>
+    <h2>Coaches<br>who <em>coach.</em></h2>
+    <p class="lede">Floor staff who still train, still spar, still lift. Most have been here from the year we opened.</p>
+  </div>
+
+  <div class="coach-grid">
+
+    <article class="coach reveal">
+      <div class="coach-photo" style="background-image:url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&fit=crop&q=80&auto=format');"></div>
+      <div class="coach-info">
+        <div class="coach-role">Head Coach · Boxing</div>
+        <h3>L. Carrigan</h3>
+        <p class="stat-line">Former amateur · 14 yrs coaching · Three regional titles produced</p>
+      </div>
+    </article>
+
+    <article class="coach reveal">
+      <div class="coach-photo" style="background-image:url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=700&fit=crop&q=80&auto=format');"></div>
+      <div class="coach-info">
+        <div class="coach-role">Head Coach · Strength</div>
+        <h3>D. Brennan</h3>
+        <p class="stat-line">SBD lifter · BWF L3 · 9 yrs coaching · Powerlifting + general strength</p>
+      </div>
+    </article>
+
+    <article class="coach reveal">
+      <div class="coach-photo" style="background-image:url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=700&fit=crop&q=80&auto=format');"></div>
+      <div class="coach-info">
+        <div class="coach-role">Coach · Conditioning</div>
+        <h3>F. Whyte</h3>
+        <p class="stat-line">Boxer-turned-coach · NSCA-CPT · 6 yrs coaching · HIIT &amp; conditioning</p>
+      </div>
+    </article>
+
+    <article class="coach reveal">
+      <div class="coach-photo" style="background-image:url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=700&fit=crop&q=80&auto=format');"></div>
+      <div class="coach-info">
+        <div class="coach-role">Coach · Pads &amp; Sparring</div>
+        <h3>K. Aitken</h3>
+        <p class="stat-line">Active amateur · 8 yrs ring time · Pads, defensive work, sparring</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ═══════════════ PRICING ═══════════════ -->
+<section class="pricing" id="pricing">
+  <div class="pricing-head reveal">
+    <div>
+      <span class="label">Memberships</span>
+      <h2>Three<br><em>tiers.</em></h2>
+    </div>
+    <p class="lede">Rolling monthly. Cancel any time, three days' notice. First session is free, no card needed.</p>
+  </div>
+
+  <div class="tier-grid">
+
+    <div class="tier reveal">
+      <div class="name">Drop-In</div>
+      <div class="price-wrap">
+        <div class="price"><span class="ccy">£</span>12<span class="small">/class</span></div>
+      </div>
+      <div class="per">Per session</div>
+      <ul>
+        <li>Any single class</li>
+        <li>No membership required</li>
+        <li>Pay at the door</li>
+        <li>First class is free</li>
+      </ul>
+      <a href="#" class="cta">Book a class</a>
+    </div>
+
+    <div class="tier featured reveal">
+      <div class="name">Full Access</div>
+      <div class="price-wrap">
+        <div class="price"><span class="ccy">£</span>89<span class="small">/mo</span></div>
+      </div>
+      <div class="per">Best value</div>
+      <ul>
+        <li>Unlimited classes</li>
+        <li>Unlimited open floor</li>
+        <li>Members-only events</li>
+        <li>Programme on request</li>
+        <li>Bring a friend free, monthly</li>
+      </ul>
+      <a href="#" class="cta">Start trial</a>
+    </div>
+
+    <div class="tier reveal">
+      <div class="name">Off-Peak</div>
+      <div class="price-wrap">
+        <div class="price"><span class="ccy">£</span>59<span class="small">/mo</span></div>
+      </div>
+      <div class="per">Mon — Fri before 16:00</div>
+      <ul>
+        <li>Unlimited off-peak classes</li>
+        <li>Unlimited off-peak open floor</li>
+        <li>Daytime only Mon — Fri</li>
+        <li>Programme on request</li>
+      </ul>
+      <a href="#" class="cta">Start trial</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ TESTIMONIAL ═══════════════ -->
+<section class="testimonial">
+  <div class="testimonial-inner reveal">
+    <p class="testimonial-text">
+      Best gym in Glasgow's east end. Real coaching, no influencer nonsense — and the only place I've ever stuck with for more than three months.
+    </p>
+    <p class="testimonial-meta">
+      <span class="name">Member · 14 months</span>
+      <span>·</span>
+      <span>BOXWORKS Bridgeton</span>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════ HOURS / LOCATION ═══════════════ -->
+<section class="location" id="visit">
+
+  <div class="reveal">
+    <span class="label">Hours</span>
+    <h2>Open <em>early.</em><br>Train late.</h2>
+    <p class="lede">Six o'clock starts most weekdays, doors close at twenty-one hundred. Saturday and Sunday on a reduced schedule.</p>
+
+    <div class="hours-table">
+      <div class="row"><span class="day">Monday</span><span class="time">06:00 — 21:00</span></div>
+      <div class="row"><span class="day">Tuesday</span><span class="time">06:00 — 21:00</span></div>
+      <div class="row"><span class="day">Wednesday</span><span class="time">06:00 — 21:00</span></div>
+      <div class="row today"><span class="day">Thursday · Today</span><span class="time">06:00 — 21:00</span></div>
+      <div class="row"><span class="day">Friday</span><span class="time">06:00 — 20:00</span></div>
+      <div class="row"><span class="day">Saturday</span><span class="time">08:00 — 14:00</span></div>
+      <div class="row"><span class="day">Sunday</span><span class="time">09:00 — 13:00</span></div>
+    </div>
+  </div>
+
+  <div class="reveal">
+    <span class="label">Find Us</span>
+    <h2>The <em>floor.</em></h2>
+    <div class="address-card" style="margin-top:24px;">
+      <div class="name">BOXWORKS<br>Athletic Co.</div>
+      <p class="line">Independent boxing &amp; strength gym, second-floor warehouse studio. Open-floor lifting, six-rack strength bay, fully kitted boxing ring on a coach-only schedule.</p>
+      <div class="meta">
+        <div><span class="k">Studio</span><span class="v">Bridgeton G40</span></div>
+        <div><span class="k">First Class</span><span class="v">Free</span></div>
+        <div><span class="k">Lockers</span><span class="v">Members</span></div>
+        <div><span class="k">Showers</span><span class="v">Yes · Six</span></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer-top">
+    <span class="brand-mark">
+      <span class="brand-square" aria-hidden="true">BX</span>
+      <span class="brand-text">
+        <span class="name">BOXWORKS</span>
+        <span class="sub">Athletic Co. · Bridgeton</span>
+      </span>
+    </span>
+    <div class="footer-meta">
+      <span>© 2026 BOXWORKS Athletic Co.</span>
+      <span class="sep">·</span>
+      <span>Glasgow</span>
+      <span class="sep">·</span>
+      <span class="tag">G40</span>
+    </div>
+  </div>
+  <p class="disclaimer">
+    Portfolio demo by GrantOps Consulting — no real business sits at this address. View our work at <a href="https://grantopsconsulting.com/" rel="noopener">grantopsconsulting.com</a>.
+  </p>
+</footer>
+
+<script>
+  (function () {
+    var topbar = document.getElementById('topbar');
+    var ticking = false;
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          if (window.scrollY > 24) topbar.classList.add('lit');
+          else topbar.classList.remove('lit');
+          ticking = false;
         });
-        tick();
+        ticking = true;
       }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
 
-      var hero = document.querySelector('.hero');
-      if (hero && supportsHover) {
-        hero.addEventListener('mousemove', function (e) {
-          var r = hero.getBoundingClientRect();
-          var px = (e.clientX - r.left) / r.width  - 0.5;
-          var py = (e.clientY - r.top)  / r.height - 0.5;
-          hero.style.setProperty('--px', (px * 14).toFixed(2) + 'px');
-          hero.style.setProperty('--py', (py * 14).toFixed(2) + 'px');
+    /* Reveal-on-scroll */
+    var reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
         });
-        var styleNode = document.createElement('style');
-        styleNode.textContent = '.hero::after { transform: translate(var(--px, 0px), var(--py, 0px)); }';
-        document.head.appendChild(styleNode);
-      }
-    })();
-  </script>
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      reveals.forEach(function (r) { io.observe(r); });
+    } else {
+      reveals.forEach(function (r) { r.classList.add('in'); });
+    }
+
+    /* Stat count-up — animates the numeric value when the stat enters viewport */
+    var counters = document.querySelectorAll('[data-counter]');
+    if ('IntersectionObserver' in window && counters.length) {
+      var statIO = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var el = entry.target;
+          var target = parseInt(el.getAttribute('data-target') || el.textContent, 10);
+          if (isNaN(target)) { statIO.unobserve(el); return; }
+          var duration = 1400;
+          var start = performance.now();
+          function tick(now) {
+            var p = Math.min(1, (now - start) / duration);
+            /* easeOutExpo */
+            var eased = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
+            el.textContent = Math.round(target * eased).toString();
+            if (p < 1) requestAnimationFrame(tick);
+          }
+          el.textContent = '0';
+          requestAnimationFrame(tick);
+          statIO.unobserve(el);
+        });
+      }, { threshold: 0.5 });
+      counters.forEach(function (c) {
+        if (!c.hasAttribute('data-target')) c.setAttribute('data-target', c.textContent.trim());
+        statIO.observe(c);
+      });
+    }
+  })();
+</script>
+
 </body>
 </html>
